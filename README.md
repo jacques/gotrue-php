@@ -22,3 +22,5 @@ composer install gotrue/gotrue
 ---
 
 ## License
+
+Gotrue HTTP Client licensed under the [Mozilla Public License](http://mozilla.org/MPL/2.0/) version 2.0. See the file LICENSE.
