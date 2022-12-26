@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" backupGlobals="false" backupStaticAttributes="false" colors="true" convertErrorsToExceptions="true" convertNoticesToExceptions="true" convertWarningsToExceptions="true" bootstrap="tests/bootstrap.php" verbose="true" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
+  <coverage processUncoveredFiles="false">
+    <include>
+      <directory suffix=".php">src/</directory>
+    </include>
+    <report>
+      <html outputDirectory="build/coverage"/>
+    </report>
+  </coverage>
+  <testsuite name="Gotrue HttpClient Test Suite">
+    <directory>tests/</directory>
+  </testsuite>
+  <logging/>
+  <listeners>
+    <listener class="VCR\PHPUnit\TestListener\VCRTestListener" file="vendor/covergenius/phpunit-testlistener-vcr/src/VCRTestListener.php"/>
+  </listeners>
+</phpunit>

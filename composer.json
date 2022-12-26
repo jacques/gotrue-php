@@ -1,0 +1,37 @@
+{
+    "name": "gotrue/gotrue",
+    "description": "HTTP Client for Netlify's Gotrue",
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "require-dev": {
+        "covergenius/phpunit-testlistener-vcr": "^3.3",
+        "phpunit/phpunit": "^9.5",
+        "rector/rector": "^0.15.1"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "prefer-dist": true,
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "ergebnis/composer-normalize": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Gotrue\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Gotrue\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "XDEBUG_MODE=coverage vendor/bin/phpunit --colors --debug --configuration=phpunit.xml --coverage-clover build/logs/clover.xml --coverage-text"
+        ]
+    }
+}
