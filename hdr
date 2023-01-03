@@ -1,0 +1,7 @@
+<?php declare(strict_types=1);
+/**
+ * Gotrue client for PHP
+ *
+ * @author    Jacques Marneweck <jacques@siberia.co.za>
+ * @copyright 2022-2023 Jacques Marneweck.  All rights strictly reserved.
+ */
